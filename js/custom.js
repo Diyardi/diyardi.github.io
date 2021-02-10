@@ -106,9 +106,20 @@
                 navigateByImgClick: true,
                 preload: [0, 1]
             }
+            
         });
     },
-
+$.extend(true, $.magnificPopup.defaults, {  
+    iframe: {
+        patterns: {
+           youtube: {
+              index: 'youtube.com/', 
+              id: 'v=', 
+              src: 'http://www.youtube.com/embed/%id%?autoplay=1' 
+          }
+        }
+    }
+});
     //Client
     KerriApp.prototype.initTestimonial = function() {
         $("#owl-demo").owlCarousel({
