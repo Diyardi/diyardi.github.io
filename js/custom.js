@@ -116,7 +116,7 @@ $.extend(true, $.magnificPopup.defaults, {
            youtube: {
               index: 'youtube.com/', 
               id: 'v=', 
-              src: 'http://www.youtube.com/embed/%id%?autoplay=0' 
+              src: 'https://www.youtube.com/embed/%id%?autoplay=0' 
           }
         }
     }
